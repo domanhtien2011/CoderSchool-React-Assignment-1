@@ -20,7 +20,7 @@ class MovieImage extends Component {
       data.posters[0] === undefined ? "No Poster" : data.posters[0].file_path;
     this.setState({
       image_path:
-        this.image_path == "No Poster"
+        this.image_path === "No Poster"
           ? "No Poster"
           : "https://image.tmdb.org/t/p/w500" + this.image_path
     });
@@ -30,9 +30,9 @@ class MovieImage extends Component {
     let image = this.state.image_path;
     return (
       <div>
-        {image.length == 0 ? (
+        {image.length === 0 ? (
           <ImageLoading />
-        ) : image == "No Poster" ? (
+        ) : image === "No Poster" ? (
           <p>
             {" "}
             <strong> No Poster for This Movie!</strong>

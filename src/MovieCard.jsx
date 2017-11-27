@@ -23,15 +23,17 @@ class MovieCard extends Component {
 					<CardImage>
 						<MovieImage movie_id={movie_id} />
 					</CardImage>
-					<Content>
-						{this.props.film.overview}
-						<br />
-						<small>Release Date: {this.props.film.release_date}</small>
-						<br />
-						<small>Average Rating: {this.props.film.vote_average}</small>
-						<br />
-						<small>Popularity: {this.props.film.popularity}</small>
-					</Content>
+					<CardContent>
+						<Content>
+							{this.props.film.overview}
+							<br />
+							<small>Release Date: {this.props.film.release_date}</small>
+							<br />
+							<small>Average Rating: {this.props.film.vote_average}</small>
+							<br />
+							<small>Popularity: {this.props.film.popularity}</small>
+						</Content>
+					</CardContent>
 				</Card>
 			</Box>
 		);

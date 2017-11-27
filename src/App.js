@@ -4,7 +4,6 @@ import MoviesList from "./MoviesList.jsx";
 import { Container, Title, Content } from "bloomer";
 import "bulma/css/bulma.css";
 import "./App.css";
-import MOVIE_DATA from "./MOVIE_DATA";
 
 class App extends Component {
   constructor(props) {
@@ -31,7 +30,7 @@ class App extends Component {
 
   async componentDidMount() {
     const results = await fetch(
-      "https://api.themoviedb.org/3/movie/now_playing?page=11&language=en-US&api_key=b0e53c16a13148a3ffc087078f52673f"
+      "https://api.themoviedb.org/3/movie/now_playing?page=1&language=en-US&api_key=b0e53c16a13148a3ffc087078f52673f"
     );
     const data = await results.json();
     this.movies = data.results;
