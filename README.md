@@ -34,6 +34,9 @@ Here's a walkthrough of implemented user stories:
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
+The following **additional** features are implemented:
+1. Image loading css animation while movie's posters are being fetched from API.
+2. Movie Poster.
 
 I tried my best to finish most of the basic functionalities for this homework. Juggling the time for a startup job and this class is not easy for me. I am gonna finish all the optional requirements in the future for sure.
 
